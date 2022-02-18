@@ -10,7 +10,7 @@ jobs:
 
   steps:
   - uses: actions/checkout@v2
-  - run: echo `${{ secrets.INSTANCE_ID}}` sample key
+  - run: echo secrets.AWS_ACCESS_KEY_ID sample key
 
   - name: AWS SSM Send-Command
     uses: peterkimzz/aws-ssm-send-command@v1.1.1
