@@ -21,6 +21,5 @@ jobs:
       aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
       aws-region: ap-south-1
       instance-ids: ${{ secrets.INSTANCE_ID}}
-
-  - name: Get the outputs
-    run: echo "The Command id is ${{ steps.ssm.outputs.command-id }}"
+   - name: Get the outputs
+        run: echo "The Command id is ${{ steps.ssm.outputs.command-id }}"
